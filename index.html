@@ -9,18 +9,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/png" href="/Images/kencodeslogowhite.png" sizes="96x96">
-
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+<link rel="icon" type="image/png" href="/Images/kencodeslogowhite.png" sizes="50x50">
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -173,17 +164,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="/Images/projects/WordPressBasicSite.png" style="width:100%">
-        <img src="Images/projects/WordPressBasicSite2.png" style="width:100%">
-        <img src="Images/projects/WordPressBasicSite3.png" style="width:100%">
+        <img id="myimg" src="/Images/projects/WordPressBasicSite.png" style="width:100%">
+        <img id="myimg" src="Images/projects/WordPressBasicSite2.png" style="width:100%">
+        <img id="myimg" src="Images/projects/WordPressBasicSite3.png" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
+        <img id="myimg" src="/w3images/underwater.jpg" style="width:100%">
+        <img id="myimg" src="/w3images/chef.jpg" style="width:100%">
+        <img id="myimg" src="/w3images/wedding.jpg" style="width:100%">
+        <img id="myimg" src="/w3images/p6.jpg" style="width:100%">
       </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
     <!-- End photo grid -->
     </div>
   <!-- End Portfolio Section -->
